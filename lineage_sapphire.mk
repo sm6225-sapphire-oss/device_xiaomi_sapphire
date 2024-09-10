@@ -18,6 +18,11 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES = 1080
 TARGET_HAS_UDFPS := true
 
+# Inherit some common crDroid stuff
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP  := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+
 PRODUCT_NAME := lineage_sapphire
 PRODUCT_DEVICE := sapphire
 PRODUCT_MANUFACTURER := Xiaomi
